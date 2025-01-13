@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS-B(07) Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .headline {
+            background-color: #ffcc00;
+            color: #000;
+        }
+        .lab {
+            background-color: #a0c4ff;
+            color: #000;
+        }
+        .lecture {
+            background-color: #caffbf;
+            color: #000;
+        }
+        .break {
+            background-color: #ffadad;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>CS-B(07) Timetable</h1>
+    <table>
+        <tr>
+            <th class="headline" rowspan="2">Day</th>
+            <th class="headline" colspan="2">Period 1</th>
+            <th class="headline" colspan="2">Period 2</th>
+            <th class="headline" colspan="2">Period 3</th>
+            <th class="headline" colspan="2">Period 4</th>
+            <th class="headline" colspan="2">Period 5</th>
+            <th class="headline" colspan="2">Period 6</th>
+            <th class="headline" colspan="2">Period 7</th>
+            <th class="headline" colspan="2">Period 8</th>
+            <th class="headline" colspan="2">Period 9</th>
+            <th class="headline" colspan="2">Period 10</th>
+        </tr>
+        <tr>
+            <th class="headline">Winter<br>9:00 - 10:00</th>
+            <th class="headline">Summer<br>8:00 - 9:00</th>
+            <th class="headline">Winter<br>10:00 - 11:00</th>
+            <th class="headline">Summer<br>9:00 - 10:00</th>
+            <th class="headline">Winter<br>11:00 - 12:00</th>
+            <th class="headline">Summer<br>10:00 - 11:00</th>
+            <th class="headline">Winter<br>12:00 - 1:00</th>
+            <th class="headline">Summer<br>11:00 - 12:00</th>
+            <th class="headline">Winter<br>1:00 - 2:00</th>
+            <th class="headline">Summer<br>12:00 - 1:00</th>
+            <th class="headline">Winter<br>2:00 - 3:00</th>
+            <th class="headline">Summer<br>1:00 - 2:00</th>
+            <th class="headline">Winter<br>3:00 - 4:00</th>
+            <th class="headline">Summer<br>2:00 - 3:00</th>
+            <th class="headline">Winter<br>4:00 - 5:00</th>
+            <th class="headline">Summer<br>3:00 - 4:00</th>
+            <th class="headline">Winter<br>5:00 - 6:00</th>
+            <th class="headline">Summer<br>4:00 - 5:00</th>
+            <th class="headline">Winter<br>6:00 - 7:00</th>
+            <th class="headline">Summer<br>5:00 - 6:00</th>
+        </tr>
+        <tr>
+            <td class="headline">Monday</td>
+            <td class="lecture" colspan="2">CSPE 306/ITPE 306 Image Processing <br> Prof: Dr. Pratistha Verma <br> Venue: EHFF</td>
+            <td class="lecture" colspan="2">CSTC 308/ITTC 308 Deep Learning <br> Prof: Dr. Vishwas Rathee <br> Venue: EHFF</td>
+            <td class="lecture" colspan="2">CSPE 318/ ITPE 318 Software Project Management <br> Prof: Dr. Sweeti Sah <br> Venue: EHFF</td>
+            <td class="lab" colspan="4">Lab: Deep Learning</td>
+            <td class="break" colspan="2">Break</td>
+            <td class="lecture" colspan="2">CSPC 302 Big Data Analytics <br> Prof: F1 <br> Venue: LHC 205</td>
+            <td class="lecture" colspan="2">CSPC 304 Distributed Computing <br> Prof: Dr. M.K. Murmu <br> Venue: LHC 205</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td class="headline">Tuesday</td>
+            <td class="lab" colspan="4">Lab: CSPC 302 Big Data Analytics</td>
+            <td class="break" colspan="4">Break</td>
+            <td class="lecture" colspan="2">CSTC 308/ITTC 308 Deep Learning <br> Prof: Dr. Vishwas Rathee <br> Venue: EHFF</td>
+            <td class="break" colspan="2">Break</td>
+            <td class="lecture" colspan="2">CSPC 302 Big Data Analytics <br> Prof: F1 <br> Venue: LHC 205</td>
+            <td class="lecture" colspan="2">CSPC 304 Distributed Computing <br> Prof: Dr. M.K. Murmu <br> Venue: LHC 205</td>
+        </tr>
+        <tr>
+            <td class="headline">Wednesday</td>
+            <td class="lab" colspan="4">Lab: Software Project Management</td>
+            <td class="break" colspan="6">Break</td>
+            <td class="lecture" colspan="2">CSPE 318/ ITPE 318 Software Project Management <br> Prof: Dr. Sweeti Sah <br> Venue: EHFF</td>
+            <td class="lecture" colspan="2">CSPE 306/ITPE 306 Image Processing <br> Prof: Dr. Pratistha Verma <br> Venue: EHFF</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td class="headline">Thursday</td>
+            <td class="break" colspan="12">Break</td>
+            <td class="lecture" colspan="2">CSPC 302 Big Data Analytics <br> Prof: F1 <br> Venue: LHC 205</td>
+            <td class="lecture" colspan="2">CSPC 304 Distributed Computing <br> Prof: Dr. M.K. Murmu <br> Venue: LHC 205</td>
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td class="headline">Friday</td>
+            <td class="lab" colspan="4">Lab: Image Processing</td>
+            <td class="break" colspan="6">Break</td>
+            <td class="lecture" colspan="2">CSPE 318/ ITPE 318 Software Project Management <br> Prof: Dr. Sweeti Sah <br> Venue: EHFF</td>
+            <td class="lecture" colspan="2">CSTC 308/ITTC 308 Deep Learning <br> Prof: Dr. Vishwas Rathee <br> Venue: EHFF</td>
+            <td class="lecture" colspan="2">CSPE 306/ITPE 306 Image Processing <br> Prof: Dr. Pratistha Verma <br> Venue: EHFF</td>
+        </tr>
+    </table>
+</body>
+</html>
